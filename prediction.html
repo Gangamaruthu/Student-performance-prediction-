@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prediction.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body{
+                background: #ffe4e1
+                
+            }
+                .form-box{
+                            background: #ffffff;
+                        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <form action="/prediction" method="POST">
+            <div class="container-fluid">
+                <h1 class="text-center mt-5">
+                    PREDICTIONS
+                </h1>
+                <div class = "row">
+                <div class=" col-md-6 mb-3">
+                    <label>Student Age</label>
+                        <select name="Student_Age" class="form-control">
+                            <option value="" selected disabled></option>
+                            <option value="18">18</option>
+                            <option value="19-22">19-22</option>
+                        </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Sex</label>
+                    <select name="Sex" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>High School Type</label>
+                    <select name="High_School_Type" class="form-control">
+                        <option value="" selected disabled> </option>
+                        <option value="1">State</option>
+                        <option value="0">Private</option>
+                        <option value="2">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Scholarship</label>
+                    <input type="number" name="Scholarship" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Additional Work</label>
+                    <select name="Additional_Work" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label> Sports activity</label>
+                    <select name="Sports_activity" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Transportation</label>
+                    <select name="Transportation" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">Public</option>
+                        <option value="1">Private</option>
+                        <option value="2">Bus</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Weekly Study Hours</label>
+                    <input type="number" name="Weekly_Study_Hours" class="form-control">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Attendance</label>
+                    <select name="Attendance" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">Never</option>
+                        <option value="1">Sometimes</option>
+                        <option value="2">Always</option >
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Reading</label>
+                    <select name="Reading" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Notes</label>
+                    <select name="Notes" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Listening in class </label>
+                    <select name="Listening_in_class" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label>Project Work</label>
+                    <select name="Project_work" class="form-control">
+                        <option value="" selected disabled></option>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container-fluid text-center pt-3">
+                
+                    <button type="submit"class="btn btn-primary">
+                        Predict
+                    </button>
+                
+            </div>
+    </form>
+    
+</body>
+</html>
